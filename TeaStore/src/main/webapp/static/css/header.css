@@ -1,0 +1,46 @@
+@keyframes dong {
+	from {
+		height: 0;
+	}
+	to {
+		height: 50px;
+	}
+}
+#dh {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 50px;
+	height: 50px;
+	display: none;
+	z-index: 10;
+	line-height: 50px;
+	animation: dong 1s linear forwards;
+}
+#dh a{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width:50px;
+	height: 50px;
+	background: url(../img/01.png) no-repeat;
+}
+#dh:hover a{
+	opacity: 0.5;
+}
+/***********头部**********************/
+#header{position: relative;height: 110px;display: flex;justify-content: center;}
+#header>.headerZero{position: absolute;width: 1200px;height: 110px;display: flex;justify-content: space-between;line-height: 110px;}
+#header>.headerZero>span{display: inline-block;color: #4ab344;font-size: 32px;font-weight: bold;width: 500px;height: 100%;}
+#header>.headerZero>ul{width: 500px;height: 100%;}
+#header>.headerZero>ul>li{display: inline-block;width: 200px;}
+#header>.headerZero>ul>li>a{display: inline-block;width: 100%;height: 100%;color: black;}
+/******************************************/
+#header1{z-index: 1;width: 100%;height: 50px;background: #2b2b2b;display: flex;justify-content: center;}
+#header1>.dar{width: 1200px;height: 100%;display: flex;justify-content: flex-start;line-height: 50px;text-align: center;}
+#header1>.dar>li{display: inline-block;width: 100px;height: 100%;margin-right: 10px;}
+#header1>.dar>li>a{display: inline-block;width: 100%;height: 100%;color: white;}
+#header1>.dar>li>.dar01{background: #4AB344;}
+#header1>.dar>li:hover a{background: #4ab344;}
+/*底部*/
+#footer{width: 100%;height: 64px;background-image: url(../img/footer.jpg);background-size: cover;color: #AAA;text-align: center;line-height: 64px;}

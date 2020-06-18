@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [16/Jun/2020:16:11:16 +0800] "POST /project_api/queryUpGoodsAll HTTP/1.1" 405 1047 http-bio-8081-exec-1 39
+0:0:0:0:0:0:0:1 - - [16/Jun/2020:16:11:22 +0800] "GET /project_api/queryUpGoodsAll HTTP/1.1" 200 8509 http-bio-8081-exec-2 221

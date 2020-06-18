@@ -1,0 +1,125 @@
+
+/**************轮播图*******************************/
+#header02{
+position: relative;
+	width: 100%;
+	height: 650px;
+	overflow: hidden;
+}
+
+.lbt01{
+position: absolute;
+top: 0;
+left: 0;
+width: 200vw;
+height: 100%;
+	}
+.lbt02{
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100%;
+background: url(../img/slide01.jpg) no-repeat 50% 50%;
+background-size: cover;
+}
+.lbt03{
+position: absolute;
+top: 0;
+right: 0;
+width: 100vw;
+height: 100%;
+background: url(../img/slide02.jpg) no-repeat 50% 50%;
+background-size: cover;
+}
+.button01{
+position: absolute;
+	top: 50%;
+	margin-top: -35.5px;
+	left: 40px;
+	width: 71px;
+	height: 71px;
+	background: url(../img/left.png) no-repeat rgba(0,0,0,.1);
+	border-radius:5px;
+	cursor: pointer;
+}
+.button01>div{width: 100%;height: 100%;border-radius:5px;opacity: 0;}
+.button01:hover>div{opacity: 1;background: rgba(0,0,0,.2);}
+.button02{
+position: absolute;
+	top: 50%;
+	margin-top: -35.5px;
+	right: 40px;
+	width: 71px;
+	height: 71px;
+	background: url(../img/right.png) no-repeat rgba(0,0,0,.1);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.button02>div{width: 100%;height: 100%;border-radius:5px;opacity: 0;}
+.button02:hover>div{opacity: 1;background: rgba(0,0,0,.2);}
+/*轮播图中间部分*/
+/*01*/
+.lbt02>div{margin: 0 auto;width: 1200px;height: 100%;background: url(../img/slide001.png) 35% 25% no-repeat;}
+/*02*/
+.lbt03>div{margin: 0 auto;width: 1200px;height: 100%;background: url(../img/slide002.png) 50% 75% no-repeat;}
+
+/****************茶道***********************************/
+#ceremony{position: relative;height: 585px;width: 100%;}
+#ceremony .ceremony{position: absolute;left:0;right: 0;margin: 0 auto;height: 100%;width: 1200px;}
+#ceremony>.ceremony>.ceremony01{position: absolute;left: 100px;top:20%;width: 256px;height: 309px;}
+#ceremony>.ceremony>.ceremony01>img{width: 256px;height: 309px;}
+#ceremony>.ceremony>.ceremony02{position: absolute;right: 50px;top: 20%;width: 679px;height: 211px;}
+#ceremony>.ceremony>.ceremony02>img{width: 679px;height: 211px;}
+#ceremony>.ceremony>.ceremony03{position: absolute;right: 60px;bottom: 25%;width: 226px;height: 77px;}
+#ceremony>.ceremony>.ceremony03>img{width: 226px;height: 77px;}
+/******************特级大红袍******************************/
+#clovershrub{position: relative;width: 100%;height: 520px;background:url(../img/lovershrub01.jpg) no-repeat;background-size: cover;display: flex;justify-content: center;}
+#clovershrub01{position: absolute;width: 1200px;height: 100%;}
+#clovershrub .clovershrub{position: absolute;top:30%;left: 150px;width: 482px;height: 198px;display: flex;flex-direction: column;justify-content: space-between;}
+#clovershrub .clovershrub>p:nth-child(1){width: 100%;font-size: 22px;color: rgb(9, 114, 47);}
+#clovershrub .clovershrub>p{width: 100%;font-size: 14px;color: rgb(102, 102, 102)}
+.clovershrub02{position: absolute;top: 18%;right: 50px;width: 434px;height: 395px;}
+/***************产品01***********************************/
+#product{position: relative;height: 900px;justify-content:center;align-items: center;display: -webkit-flex;background: #f3f4f4;}
+#product>.product01{width: 1200px;height: 520px;display: flex;justify-content:flex-end;}
+#product>.product01>.productimg{width: 290px;height: 100%;}
+#product>.product01>.productimgs{width: 880px;height: 100%;display: flex;flex-wrap: wrap;}
+#product>.product01>.productimgs>div{position: relative;width: 290px;height: 260px;}
+#product>.product01>.productimgs>div>img{position: absolute;top: 0;left:0;width: 290px;height: 260px;}
+#product>.product01>.productimgs>div>div{position: absolute;top: 0;left: 0;width: 100%;height: 260px;opacity: 0;text-align: center;line-height:260px;color:rgb(255,255,255);}
+#product>.product01>.productimgs>div:hover>div{opacity: 1;transition: background 1s;background: #555555;}
+/******************好茶********************************/
+#niceTea{height: 700px;background-image: url(../img/beijingtu.jpg);background-size: cover;display: flex;justify-content: center;}
+#niceTea>.nicetea{width: 1200px;height: 700px;text-align: center;}
+#niceTea>.nicetea>h3{margin-top: 110px;width: 100%;height: 60px;font-size: 40px;color: rgb(255, 255, 255);}
+#niceTea>.nicetea>p{margin-top: 15px;width: 100%;height: 50px;color: rgb(255, 255, 255);font-size: 18px;}
+#niceTea>.nicetea>div{margin-top: 60px;width: 1200px;height: 330px;margin-bottom: 0px;display: flex;justify-content: space-around;}
+#niceTea>.nicetea>div>div{width: 320px;height: 330px;background: white;}
+#niceTea>.nicetea>div>div>img{margin-top: 10px;width: 300px;height: 225px;margin-left: 3px;}
+#niceTea>.nicetea>div>div>p{text-align: center;line-height: 2em;font-size: 16px;color: #333333;}
+/***********隐藏的轮播图*************************/
+#hide02{position: fixed;top: 0;left: 0;width: 100vw;height: 100vh;background: rgba(34,34,34,0.5);z-index: 999;display: none;}
+#hide02>.hide02{position: absolute;top: 50%;transform: translate(-50%,-50%);left: 50%;width: 890px;height: 650px;background: white;}
+/*轮播图*/
+#hide02>.hide02>#hideSlideshow2{position: absolute;top: 70px;left: 46px;width: 798px;height: 390px;}
+#hide02>.hide02>#hideSlideshow2>#divlong{position: absolute;top: 65px;left: 60px;width: 290px;height: 260px;}
+#hide02>.hide02>#hideSlideshow2>#divlong>img{width: 290px;height: 260px;}
+#hide02>.hide02>#hideSlideshow2>#divlong01{position: absolute;top: 0;right: 0;width: 374px;height: 250px;display: flex;flex-direction: column;justify-content: space-around;}
+#hide02>.hide02>#hideSlideshow2>#divlong01>p{font-size: 14px;font-family: "Microsoft Yahei";color: #767676;}
+#hide02>.hide02>#hideSlideshow2>#divlong01>div{height: 1px;border: none;border-top: 1px solid #e6e6e6;}
+#hide02>.hide02>#hideSlideshow2>#divlong01>p:nth-child(1){font-size: 20px;font-family: "Microsoft Yahei";color: #474747;}
+/*图片按钮*/
+#hide02>.hide02>.buttonimg{position: absolute;left: 46px;bottom: 70px;width: 798px;height: 88px;display: flex;justify-content: space-around;}
+#hide02>.hide02>.buttonimg>img{width: 80px;height: 72px;}
+/*关闭左右按钮*/
+#hide02>.hide02>a:nth-child(1){position: absolute;top: 22px;right: 22px;width:16px;height: 16px;background: url(../img/slide.png) no-repeat 0 -420px;}
+#hide02>.hide02>a:nth-child(2){position: absolute;top: 234px;left: -130px;width: 94px;height: 94px;background: url(../img/slide.png) no-repeat 0 -132px;}
+#hide02>.hide02>a:nth-child(3){position: absolute;top: 234px;right: -130px;width: 94px;height: 94px;background: url(../img/slide.png) no-repeat 0 0;}
+/*******************************品****************************/
+#pin{position: relative;width: 100%;height: 600px;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+#pin>img{width: 290px;height: 196px;}
+#pin>.pin{margin-top: 20px;font-family: PMingLiU;font-size: 30px;color: #333333;font-weight: bold;}
+#pin>.pin01{margin-top: 20px;width: 60px;height: 168px;display: flex;justify-content: space-between;}
+#pin>.pin01>div{width: 30px;height: 100%;text-align: center;font-family:"华文宋体";font-size: 20px;color: #666666;font-weight: normal;line-height: 1.5em;}
+
