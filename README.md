@@ -14,5 +14,5 @@
 
 * <strong> project_api： </strong> 为系统中层接口，为前台小程序服务，间接的操作数据库;</br></br>
 
-*  <strong> refund </strong> 有Excelde 导入导出;</br></br>
+*  <strong> refund </strong> 有Excel 的导入导出;</br></br>
 
